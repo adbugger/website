@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact List</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="profile.css">
+	<script type="text/javascript" src="profile.js"></script>
+</head>
+<body onload="image()">
+	<nav>
+		<ul>
+			<li><a href="index.html">Index&nbsp;</a></li>
+			<li><a href="profile.html">Profile&nbsp;</a></li>
+			<li><a href="page.html">Page&nbsp;</a></li>
+			<li><a href="contacts.html">Contacts&nbsp;</a></li>
+		</ul>
+	</nav>
+	<header>
+		<img class="dp" src="facebook.png" alt="Aditya Bharti">
+		<span id="name" onclick="print()">Aditya Bharti</span>
+	</header>
+	<div id="backlay" onclick="hide()"></div>
+	<img id="overlay" src="">
+	<div id="contacts_body">
+	<table>
+		<span id="banner">Contact list&nbsp;&nbsp;<small>(Click dp to enlarge)</small></span>
+		<tr class="table_head">
+			<th class="pic">DP</th>
+			<th class="name">Name</th>
+			<th class="phone">Phone</th>
+		</tr>
+		<tr>
+			<td><img src="facebook.png" class="pic-cell" alt="picture" onclick="overlayer(0)"></td>
+			<td class="name">Vedant Sareen</td>
+			<td class="phone">+91-123695487</td>
+		</tr>
+		<tr class="alt">
+			<td><img src="facebook.png" class="pic-cell" alt="picture" onclick="overlayer(1)"></td>
+			<td class="name">Aashay Singhal</td>
+			<td class="phone">+91-236845296</td>
+		</tr>
+		<tr>
+			<td><img src="facebook.png" class="pic-cell" alt="picture" onclick="overlayer(2)"></td>
+			<td class="name">Daksh Anand</td>
+			<td class="phone">+91-9896532148</td>
+		</tr>
+		<tr class="alt">
+			<td><img src="facebook.png" class="pic-cell" alt="picture" onclick="overlayer(3)"></td>
+			<td class="name">Contact </td>
+			<td class="phone">Phone </td>
+		</tr>
+	</table>
+	</div>
+	<span id = "timer"></span>
+</body>
+</html>
